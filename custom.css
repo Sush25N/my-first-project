@@ -1,0 +1,65 @@
+.my-bg-photo {
+  background: url('images/banner-bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.my-bg-photo * {
+  position: relative;
+  z-index: 10;
+}
+
+.my-bg-photo:before {
+  content: " ";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: .65;
+}
+
+.my-custom-container {
+  max-width: 800px;
+}
+
+.accordion .btn-link:focus {
+  box-shadow: none;
+}
+
+.my-drawing {
+  transition: all .33s ease-out;
+}
+
+.my-drawing:hover {
+  transform: scale(1.054) rotate(15deg);
+}
+table tbody tr:nth-child(odd) td:hover {
+  background-color: lightpink;
+}
+table tbody tr:nth-child(even) td:hover{
+  background-color: lightblue;
+}
+
+table th {
+  text-align: left;
+  background-color: lightgray;
+  color: rgb(134, 17, 17);
+  text-shadow:1px 1px 0 rgba(0, 0, 0, .4);
+}
+table th,
+table td {
+  border: 1px solid lightgray;
+  padding: 10px;
+  vertical-align: top;
+}
+table.grocery-list tr :nth-child(2),
+table.grocery-list tr :nth-child(3) {
+  text-align: center;
+
+ol.a {
+  color: blue;
+}
